@@ -1,6 +1,6 @@
 import React from "react";
 import { SearchInput } from "./style";
-import { Button } from "../../interaction/style";
+import { Button } from "../../details/button/style";
 
 export default function Search() {
    return (

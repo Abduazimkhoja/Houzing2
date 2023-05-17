@@ -5,7 +5,7 @@ import Search from "../../blocks/search";
 import Intro from "../../blocks/intro";
 import Recommended from "../../blocks/recommended";
 import Category from "../../blocks/category";
-import { Button } from "../../interaction/style";
+import { Button } from "../../details/button/style";
 import { Container, FullBackground, Wrap } from "../style";
 
 export default function Main() {

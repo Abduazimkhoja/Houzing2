@@ -78,12 +78,3 @@ export const Button = styled.button`
 
    ${buttonStyle || white}
 `;
-
-// const buttonType = ({ type }) =>
-//    ({
-//       white: `border: 1px solid #fff; color: #fff;`,
-//       whiteBorder: `border: 1px solid #fff; color: #0D263B;`,
-//       grayBorder: `border: 1px solid #0D263B; color: #0D263B;`,
-//       blue: `background: #0061DF; color: #fff`,
-//       blueBorder: `border: 1px solid #0061DF; color: #0061DF;`,
-//    }[type || "white"]);

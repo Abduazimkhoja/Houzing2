@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../../interaction/style";
+import { Button } from "../../details/button/style";
 import { Header } from "./style";
 
 export default function Head() {
