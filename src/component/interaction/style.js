@@ -17,15 +17,15 @@ const white = css`
    }
 `;
 
-const whiteBorder = css`
+const grayBorder = css`
    color: #0d263b;
-   border: 1px solid #fff;
+   border: 1px solid #E6E9EC;
    &:hover {
-      background: #fff;
+      background: #E6E9EC;
    }
 `;
 
-const grayBorder = css`
+const gray = css`
    color: #0d263b;
    border: 1px solid #0d263b;
    &:hover {
@@ -47,13 +47,17 @@ const buttonStyle = (props) =>
    ({
       blue,
       white,
-      whiteBorder,
-      blueBorder,
       grayBorder,
+      blueBorder,
+      gray,
    }[props.type]);
 
 export const Button = styled.button`
    padding: 12px ${(props) => props.side};
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 8px;
 
    font-weight: 400;
    font-size: 14px;
@@ -65,14 +69,14 @@ export const Button = styled.button`
    transition: transform 0.2s, background 0.2s, color 0.2s, border 0.2s;
 
    &:hover {
-      transform: scale(1.05);
+      transform: scale(1.02);
    }
 
    &:active {
       transform: scale(1);
    }
 
-   ${buttonStyle}
+   ${buttonStyle || white}
 `;
 
 // const buttonType = ({ type }) =>

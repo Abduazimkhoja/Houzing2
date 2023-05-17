@@ -6,19 +6,21 @@ import Intro from "../../blocks/intro";
 import Recommended from "../../blocks/recommended";
 import Category from "../../blocks/category";
 import { Button } from "../../interaction/style";
-import { Container, FullBackground } from "../style";
+import { Container, FullBackground, Wrap } from "../style";
 
 export default function Main() {
    return (
       <div>
-         <FullBackground height = "64px" bg = "#0d263b">
+         <FullBackground height="64px" bg="#0d263b">
             <Container>
-               <Head/>
+               <Head />
             </Container>
          </FullBackground>
-         <FullBackground height = "64px" bg = "#fff">
+         <FullBackground height = "64px">
             <Container>
-               <Search/>
+               <Wrap stats={["flex", "center", "20px"]}>
+                  <Search />
+               </Wrap>
             </Container>
          </FullBackground>
          <Intro />
