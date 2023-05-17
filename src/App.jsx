@@ -1,5 +1,12 @@
 import React from "react";
+import "./assets/icons/style.css";
 
-export default function App() {
-   return <div className="App"></div>;
+function App() {
+   return (
+      <div className="App">
+         <i className="icon-filter"></i>
+      </div>
+   );
 }
+
+export default App;
