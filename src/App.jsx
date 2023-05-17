@@ -1,7 +1,7 @@
 import React from "react";
 import "./assets/icons/style.css";
 import Main from "./component/pages/main";
-import "./app.css"
+import "./nullStyle.css"
 
 function App() {
    return (

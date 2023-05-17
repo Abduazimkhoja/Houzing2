@@ -1,16 +1,29 @@
 import React from "react";
-import Header from "../../blocks/header";
+
+import Head from "../../blocks/header";
 import Search from "../../blocks/search";
 import Intro from "../../blocks/intro";
 import Recommended from "../../blocks/recommended";
 import Category from "../../blocks/category";
+import { Button } from "../../interaction/style";
+import { Container, FullBackground } from "../style";
 
 export default function Main() {
-   return <div>
-      <Header/>
-      <Search/>
-      <Intro/>
-      <Recommended/>
-      <Category/>
-   </div>;
+   return (
+      <div>
+         <FullBackground height = "64px" bg = "#0d263b">
+            <Container>
+               <Head/>
+            </Container>
+         </FullBackground>
+         <FullBackground height = "64px" bg = "#fff">
+            <Container>
+               <Search/>
+            </Container>
+         </FullBackground>
+         <Intro />
+         <Recommended />
+         <Category />
+      </div>
+   );
 }
