@@ -10,6 +10,7 @@ import {
 } from "./style";
 import { Has } from "../../details/has/style";
 import { Button } from "../../details/button/style";
+import { Arrow } from "../../details/arrow/style";
 
 export default function Intro() {
    return (
@@ -29,8 +30,8 @@ export default function Intro() {
                }) => (
                   <IntroHouse key={id} url={url}>
                      <h2 className="intro__title">{title}</h2>
-                     <SubTitle>{address}</SubTitle>
-                     <Has margin = {["24px"]}>
+                     <SubTitle color="#fff">{address}</SubTitle>
+                     <Has margin={["24px"]}>
                         <div>
                            <i className="icon-bed"></i>
                            {beds} beds
@@ -55,6 +56,12 @@ export default function Intro() {
                   </IntroHouse>
                )
             )}
+            <Arrow type="circleOpacity" left={true}>
+               <i className="icon-arrow"></i>
+            </Arrow>
+            <Arrow type="circleOpacity" right={true}>
+               <i className="icon-arrow"></i>
+            </Arrow>
          </IntroWrap>
       </>
    );

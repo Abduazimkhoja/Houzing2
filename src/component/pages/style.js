@@ -11,7 +11,6 @@ export const FullBackground = styled.div`
 
    background: ${({ bg }) => bg};
    height: ${({ height }) => height};
-   
 `;
 
 export const Wrap = styled.div`

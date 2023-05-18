@@ -41,4 +41,5 @@ export const IntroHouse = styled.div`
 
 export const IntroWrap = styled.div`
    display: flex;
+   position: relative;
 `;

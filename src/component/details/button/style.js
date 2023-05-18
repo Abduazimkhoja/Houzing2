@@ -12,8 +12,9 @@ const white = css`
    color: #fff;
    border: 1px solid #fff;
    &:hover {
-      border: 1px solid #0061df;
-      background: #0061df;
+      border: 1px solid #fff;
+      background: #fff;
+      color: #0d263b;
    }
 `;
 
